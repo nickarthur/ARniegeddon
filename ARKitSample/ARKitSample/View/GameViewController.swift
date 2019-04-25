@@ -62,11 +62,19 @@ class GameViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
+    
+    func showAlert(title: String, message: String, handler: ((UIAlertAction) -> Void)? = nil) {
+        let alertView = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: NSLocalizedString("Ok", comment: ""), style: .default, handler: handler)
+        alertView.addAction(action)
+        self.present(alertView, animated: true, completion: nil)
+    }
 }
 
 extension GameViewController: ARSKViewDelegate {
     func session(_ session: ARSession, didFailWithError error: Error) {
         print("Session Failed - probably due to lack of camera access")
+        self.showAlert(title: "Error", message: "Your iPhone does not support ARKit.") { (alert) in exit(0) }
     }
     
     func sessionWasInterrupted(_ session: ARSession) {
