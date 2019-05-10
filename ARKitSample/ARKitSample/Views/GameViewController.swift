@@ -6,16 +6,13 @@
 //  Copyright © 2019 Marcelo Chaves. All rights reserved.
 //
 
-import UIKit
 import SpriteKit
 import GameplayKit
 import ARKit
 
-class GameViewController: UIViewController {
+class GameViewController: BaseViewController {
     
     var sceneView: ARSKView!
-    
-    // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,18 +53,10 @@ class GameViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Release any cached data, images, etc that aren't in use.
     }
     
     override var prefersStatusBarHidden: Bool {
         return true
-    }
-    
-    func showAlert(title: String, message: String, handler: ((UIAlertAction) -> Void)? = nil) {
-        let alertView = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let action = UIAlertAction(title: NSLocalizedString("Ok", comment: ""), style: .default, handler: handler)
-        alertView.addAction(action)
-        self.present(alertView, animated: true, completion: nil)
     }
 }
 

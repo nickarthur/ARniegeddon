@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC060F512285B20F0055C3A6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC060F502285B20F0055C3A6 /* BaseViewController.swift */; };
 		FC0A1A4F2271E4810088DB7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0A1A292271E47F0088DB7D /* AppDelegate.swift */; };
 		FC0A1A502271E4810088DB7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC0A1A2A2271E47F0088DB7D /* LaunchScreen.storyboard */; };
 		FC0A1A512271E4810088DB7D /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = FC0A1A2B2271E47F0088DB7D /* Actions.sks */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC060F502285B20F0055C3A6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FC0A1A132271E4370088DB7D /* ARKitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC0A1A222271E43B0088DB7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC0A1A282271E47E0088DB7D /* ARKitSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARKitSample-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -80,9 +82,9 @@
 				FC0A1A282271E47E0088DB7D /* ARKitSample-Bridging-Header.h */,
 				FC0A1A222271E43B0088DB7D /* Info.plist */,
 				FC0A1A292271E47F0088DB7D /* AppDelegate.swift */,
-				FC0A1A752271E6080088DB7D /* View */,
-				FC0A1A742271E5CF0088DB7D /* Storyboard */,
-				FC0A1A702271E5030088DB7D /* Scene */,
+				FC0A1A752271E6080088DB7D /* Views */,
+				FC0A1A742271E5CF0088DB7D /* Storyboards */,
+				FC0A1A702271E5030088DB7D /* Scenes */,
 				FC0A1A4D2271E4800088DB7D /* GameScene.swift */,
 				FC0A1A2D2271E47F0088DB7D /* Sounds */,
 				FC0A1A352271E4800088DB7D /* Types.swift */,
@@ -105,13 +107,13 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
-		FC0A1A702271E5030088DB7D /* Scene */ = {
+		FC0A1A702271E5030088DB7D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
 				FC0A1A2B2271E47F0088DB7D /* Actions.sks */,
 				FC0A1A4C2271E4800088DB7D /* GameScene.sks */,
 			);
-			path = Scene;
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		FC0A1A732271E57A0088DB7D /* Supporting Files */ = {
@@ -122,21 +124,22 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FC0A1A742271E5CF0088DB7D /* Storyboard */ = {
+		FC0A1A742271E5CF0088DB7D /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				FC0A1A2A2271E47F0088DB7D /* LaunchScreen.storyboard */,
 				FC0A1A2C2271E47F0088DB7D /* Main.storyboard */,
 			);
-			path = Storyboard;
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		FC0A1A752271E6080088DB7D /* View */ = {
+		FC0A1A752271E6080088DB7D /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				FC0A1A362271E4800088DB7D /* GameViewController.swift */,
+				FC060F502285B20F0055C3A6 /* BaseViewController.swift */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC060F512285B20F0055C3A6 /* BaseViewController.swift in Sources */,
 				FC0A1A6E2271E4810088DB7D /* GameScene.swift in Sources */,
 				FC0A1A4F2271E4810088DB7D /* AppDelegate.swift in Sources */,
 				FC0A1A5B2271E4810088DB7D /* GameViewController.swift in Sources */,
